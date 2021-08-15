@@ -1,0 +1,41 @@
+
+<div class="header1" align ="left">
+  <h5>Hi, Usernmame!</h5>
+</div>
+
+<!-- <div class="header" align ="right">
+  <button [routerLink]="['/']">Logout</button>
+</div> -->
+
+<h3 align="middle">Checkout:</h3>
+<section>
+  <img src="https://images-eu.ssl-images-amazon.com/images/I/417uExCG6KL._SX300_SY300_QL70_FMwebp_.jpg" alt="Lamp" width="100" height="100">
+</section>
+
+<div class="products">
+PRODUCT NAME: Smart Phone<br>
+PRODUCT DETAILS: Electronics<br>
+COST: Rs.20000<br>
+
+<div class="emi-period" align ="middle">
+  <h5>EMI Period:</h5>
+  <select >
+    <option *ngFor="let emiPeriod of emi">
+      {{ emiPeriod.emiPeriod}}
+    </option>
+  </select>
+</div>
+
+<div class="installments" align ="middle">
+  <br> EMI Starting:
+  {{20000/num}}
+</div>
+
+<div class="pay-now" align ="middle">
+  <button (click)="payment()">Pay Now</button><br><br>
+</div>
+
+<div class="footer">
+  <a href="tnc" align="middle" style="width: 100%; display: block;">Terms and Conditions</a>
+</div>
+<router-outlet></router-outlet>

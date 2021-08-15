@@ -1,0 +1,11 @@
+<h1>Hii Username</h1>
+<!-- <button [routerLink]="['/']">Logout</button> -->
+
+<div *ngFor="let product of products">
+    <img src={{product.imgName}}>
+      <p>Product name: {{product.productName}} </p>
+      <p>Product Details: {{product.productDescription}} </p>
+      <p>Cost: {{product.Cost}} </p>
+      <button [routerLink]="['/product-info-page']" routerLink Active="active">Buy now</button><br>
+      </div>
+  
